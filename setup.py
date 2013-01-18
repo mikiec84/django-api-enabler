@@ -15,12 +15,15 @@ def read_file(filename):
 setup(
     name='django-api_enabler',
     version=__import__('api_enabler').__version__,
-    author='<Include Your Name Here>',
+    author='subhranath',
     author_email='<Include Your Email Here>',
     packages=find_packages(),
     include_package_data=True,
-    url='<Include Link to Project>',
-    license='<Include License Name>',
+    install_requires=[
+     "django",
+    ],
+    url='https://github.com/subhranath/django-api-enabler',
+    license='MIT',
     description=u' '.join(__import__('api_enabler').__doc__.splitlines()).strip(),
     classifiers=[
         'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
