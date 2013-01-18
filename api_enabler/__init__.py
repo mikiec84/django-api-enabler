@@ -1,3 +1,9 @@
+"""
+Auto discovers api.py modules in all of INSTALLED_APPS and fails silently
+if not present. This registers all the URLs specified in the api.py module. 
+"""
+__version__ = '0.1'
+
 def autodiscover():
     """
     Auto discovers api.py modules in all of INSTALLED_APPS and fails silently
